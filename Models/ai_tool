@@ -1,0 +1,11 @@
+# pip install bardapi
+# pip install python-dotenv
+# touch .env
+# echo "COOKIE_TOKEN=Zgj5DofFVk5saoTspIhXh1agRbv8UCTMM24a_XBmNwUjNPs90pZdoVg__kPaUHPtDM4xeg." >> .env
+import os
+from bardapi import Bard
+from dotenv import load_dotenv
+load_dotenv()
+bard = Bard(token=os.environ['COOKIE_TOKEN'])
+response = bard.get_answer("What is a LLM?")
+print(response)
