@@ -1,2 +1,5 @@
 # requirements.txt
-gsheetsdb==x.x.x
+pandas==1.4.4
+streamlit==1.20.0
+streamlit-server-state==0.16.0
+openpyxl==3.0.10
